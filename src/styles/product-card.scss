@@ -1,0 +1,70 @@
+.features {
+    padding: var(--space-4xl) 0;
+    background: var(--color-background);
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 var(--space-xl);
+    }
+
+    .el-row {
+        margin-bottom: -24px;
+        
+        .el-col {
+            margin-bottom: 24px;
+        }
+    }
+
+    .feature-card {
+        background: var(--color-gray-light);
+        border-radius: 20px;
+        height: 500px; // 固定高度
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.3s ease;
+        overflow: hidden; // 防止内容溢出
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-content {
+            padding: var(--space-xl);
+            text-align: center;
+            flex-shrink: 0;
+
+            h3 {
+                font-size: var(--font-size-xl);
+                margin-bottom: var(--space-sm);
+            }
+
+            p {
+                color: var(--color-secondary);
+                font-size: var(--font-size-base);
+            }
+        }
+
+        .image-container {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: var(--space-lg);
+            position: relative;
+            height: 350px; // 固定图片容器高度
+
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                max-width: 85%;
+                max-height: 85%;
+                width: auto;
+                height: auto;
+                object-fit: contain;
+            }
+        }
+    }
+} 

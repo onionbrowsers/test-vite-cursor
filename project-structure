@@ -1,1 +1,18 @@
- 
+src/
+├── assets/
+├── components/
+│   ├── layout/
+│   │   └── TheHeader.vue
+│   └── common/
+│       └── ProductCard.vue
+├── router/
+│   └── index.js
+├── stores/
+│   └── products.js
+├── styles/
+│   ├── variables.scss
+│   └── main.scss
+├── views/
+│   └── HomePage.vue
+├── App.vue
+└── main.js 

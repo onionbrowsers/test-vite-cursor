@@ -1,1 +1,36 @@
- 
+@use './variables.scss' as *;
+@use './product-card.scss' as *;
+
+// 重置样式
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu,
+        Cantarell, 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: var(--color-text);
+}
+
+// 通用容器
+.container {
+    width: 100%;
+    max-width: var(--breakpoint-xl);
+    margin: 0 auto;
+    padding: 0 var(--space-lg);
+}
+
+// 通用动画
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
